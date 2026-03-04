@@ -10,162 +10,270 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* ===== Header & Hero Section ===== */
+/* ---------- HEADER + HERO ---------- */
 .hero {
-    background-color: #fff3f7;
-    text-align: center;
-    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #fff5f7;
 }
 
-.hero h1 {
-    font-family: "Lucida Calligraphy", cursive;
-    font-size: 50px;
-    color: #d63384;
-    margin-bottom: 10px;
+.hero-text h1 {
+    font-family: "Berlin Sans FB";
+    font-size: 60px;
+    color: #8b3a3a;
 }
 
-.hero p {
-    font-family: "Comic Sans MS", cursive;
-    font-size: 20px;
-    color: #555;
+.hero-text p {
+    font-family: "Comic Sans MS";
+    font-size: 28px;
+    color: #d16c7c;
 }
 
 .hero img {
-    width: 300px;
-    margin-top: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 400px;
+    border-radius: 20px;
 }
 
-/* ===== About Us Section ===== */
+/* ---------- ABOUT US ---------- */
 .about {
     background-image: url("https://i.ibb.co/1tjb0N3h/background-jpg.jpg");
     background-size: cover;
     background-position: center;
-    padding: 60px 20px;
+    padding: 60px;
 }
 
-.about-box {
-    background-color: rgba(255,255,255,0.85);
-    padding: 30px;
-    max-width: 800px;
-    margin: auto;
-    border-radius: 15px;
-    text-align: center;
+.about-overlay {
+    background: rgba(255,255,255,0.8);
+    padding: 40px;
+    display: flex;
 }
 
 .about h2 {
-    font-family: "Berlin Sans FB", sans-serif;
-    font-size: 36px;
-    color: #b03060;
+    font-family: "Berlin Sans FB";
+    font-size: 40px;
+    width: 30%;
 }
 
 .about p {
-    font-family: "Berlin Sans FB", sans-serif;
-    font-size: 18px;
-    color: #333;
+    font-family: "Berlin Sans FB";
+    font-size: 22px;
+    width: 70%;
 }
 
-/* ===== Menu Section ===== */
+/* ---------- MENU SECTIONS ---------- */
 .menu {
-    padding: 50px 20px;
-    background-color: #fff;
+    padding: 50px;
     text-align: center;
 }
 
 .menu h2 {
-    font-family: "Lucida Calligraphy", cursive;
+    font-family: "Lucida Calligraphy";
     font-size: 40px;
-    color: #d63384;
-    margin-bottom: 40px;
 }
 
 .menu-items {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.item {
-    width: 250px;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 
 .item img {
-    width: 100%;
+    width: 250px;
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
 .item h3 {
-    margin-top: 10px;
-    color: #b03060;
+    font-family: "Comic Sans MS";
+    font-size: 24px;
 }
 
 .item p {
-    font-size: 14px;
-    color: #444;
+    font-family: "Baskerville Old Face";
+    font-size: 18px;
+}
+
+/* ---------- VISION SECTION ---------- */
+.vision {
+    background-image: url("https://i.ibb.co/BH94gkx2/cookies.jpg");
+    background-size: cover;
+    padding: 60px;
+}
+
+.vision-overlay {
+    background: rgba(255,255,255,0.75);
+    padding: 40px;
+    text-align: center;
+}
+
+.vision h2 {
+    font-family: "Berlin Sans FB";
+    font-size: 35px;
+}
+
+.vision p {
+    font-family: "Baskerville Old Face";
+    font-size: 22px;
+}
+
+/* ---------- CONTACT SECTION ---------- */
+.contact {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff0f3;
+}
+
+.contact-left {
+    font-family: "Lucida Calligraphy";
+    font-size: 60px;
+}
+
+.contact-right {
+    font-family: "Baskerville Old Face";
+    font-size: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.instagram {
+    margin-top: 20px;
+    font-family: "Baskerville Old Face";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Gill Sans MT";
+    font-size: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- ===== Section 1: Header & Hero ===== -->
-<section class="hero">
-    <h1>Little ABRM Bakes</h1>
-    <p>Tiny Bites, Big Happiness ✨</p>
+<!-- SECTION 1 -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Little ABRM Bakes</h1>
+        <p>Tiny Bites, Big Happiness ✨</p>
+    </div>
+    <img src="https://i.ibb.co/MxWt8ZK3/bake-jpg.jpg">
+</div>
 
-    <a href="https://ibb.co/rRTzbFq1">
-        <img src="https://i.ibb.co/MxWt8ZK3/bake-jpg.jpg" alt="Bakery Image">
-    </a>
-</section>
-
-<!-- ===== Section 2: About Us ===== -->
-<section class="about">
-    <div class="about-box">
+<!-- SECTION 2 -->
+<div class="about">
+    <div class="about-overlay">
         <h2>About Us</h2>
         <p>
-            Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini desserts such as mini cakes, cupcakes, donuts, cookies, brownies, and custom sweet treats. Every item is handmade with love, using quality ingredients to bring happiness in every bite. Perfect for celebrations, gifts, and sweet cravings.
+Little Abrm Bakes is a home-based bakery that offers fresh and delicious mini desserts such as mini cakes, cupcakes, donuts, cookies, brownies, and custom sweet treats. Every item is handmade with love, using quality ingredients to bring happiness in every bite. Perfect for celebrations, gifts, and sweet cravings.
         </p>
     </div>
-</section>
+</div>
 
-<!-- ===== Section 3: Menu ===== -->
-<section class="menu">
-    <h2>Take a Bite!</h2>
+<!-- SECTION 3 -->
+<div class="menu">
+<h2>Take a Bite!</h2>
+<div class="menu-items">
 
-    <div class="menu-items">
+<div class="item">
+<img src="https://i.ibb.co/jkq1tBxS/Donuts.jpg">
+<h3>Donuts</h3>
+<p>Oreo Dark Chocolate, White / Dark Chocolate, Red Velvet, Strawberry</p>
+</div>
 
-        <!-- Donuts -->
-        <div class="item">
-            <a href="https://ibb.co/qYhP6X4v">
-                <img src="https://i.ibb.co/jkq1tBxS/Donuts.jpg" alt="Donuts">
-            </a>
-            <h3>Donuts</h3>
-            <p>Oreo Dark Chocolate, White / Dark Chocolate, Red Velvet, Strawberry</p>
-        </div>
+<div class="item">
+<img src="https://i.ibb.co/HLLmKFSb/Red-Velvet-Cake.jpg">
+<h3>Mouthwatering Cakes</h3>
+<p>Chocolate, red velvet, vanilla & strawberry</p>
+</div>
 
-        <!-- Cakes -->
-        <div class="item">
-            <a href="https://ibb.co/9mmRp8D1">
-                <img src="https://i.ibb.co/HLLmKFSb/Red-Velvet-Cake.jpg" alt="Cakes">
-            </a>
-            <h3>Mouthwatering Cakes</h3>
-            <p>Chocolate, red velvet, vanilla & strawberry</p>
-        </div>
+<div class="item">
+<img src="https://i.ibb.co/QF85GHx1/Cookies-1.jpg">
+<h3>Cookies</h3>
+<p>Chocolate chip & peanut butter flavors</p>
+</div>
 
-        <!-- Cookies -->
-        <div class="item">
-            <a href="https://ibb.co/xSm4QgrR">
-                <img src="https://i.ibb.co/QF85GHx1/Cookies-1.jpg" alt="Cookies">
-            </a>
-            <h3>Cookies</h3>
-            <p>Chocolate chip & peanut butter flavors</p>
-        </div>
+</div>
+</div>
 
-    </div>
-</section>
+<!-- SECTION 4 -->
+<div class="menu">
+<h2>Take a Bite!</h2>
+<div class="menu-items">
+
+<div class="item">
+<img src="https://i.ibb.co/v649mQw1/Cheesecake.jpg">
+<h3>Dessert</h3>
+<p>Cheesecake, Strawberry cheesecake & Brownie with ice-cream</p>
+</div>
+
+<div class="item">
+<img src="https://i.ibb.co/SXLnfjZm/Tiramisu.jpg">
+<h3>Signature Dish</h3>
+<p>Tiramisu, Nutella tiramisu & Strawberry Tiramisu</p>
+</div>
+
+<div class="item">
+<img src="https://i.ibb.co/SDDQ4DgQ/Pancake.jpg">
+<h3>Snacks</h3>
+<p>Pancakes, Chocolate Chip Waffles, Momo, Pizza, Sandwich</p>
+</div>
+
+</div>
+</div>
+
+<!-- SECTION 5 -->
+<div class="vision">
+<div class="vision-overlay">
+<h2>Vision</h2>
+<p>Our vision is to become a trusted and loved mini bakery brand known for delicious small treats and beautiful presentation.</p>
+
+<h2>Brand Value</h2>
+<p>
+We believe:<br>
+Small things create big happiness...<br>
+Quality matters😊<br>
+Homemade with love❤️
+</p>
+</div>
+</div>
+
+<!-- SECTION 6 -->
+<div class="contact">
+
+<div class="contact-left">
+We'd love to hear from you!
+</div>
+
+<div class="contact-right">
+<p><span class="bold">📍Location:</span> Butwal, Rupandehi, Nepal</p>
+<p><span class="bold">📞Contact us:</span> 9768281253<br>
+9745416869<br>
+9811966295<br>
+9821591982</p>
+<p><span class="bold">✉️Email:</span> abrmbakes005@gmail.com</p>
+<p><span class="bold">🕘Opens:</span> 9AM–9PM (except Saturday)</p>
+
+<div class="instagram">
+🍪 follow for sweet updates:<br>
+<a href="https://www.instagram.com/littleabrmbakes?igsh=cTQwNGFxdWJvaTIz" target="_blank">
+Instagram
+</a>
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+🍰 soft brown · cream · pastel pink 🧁<br>
+#homemadewithlove #minitreats
+</div>
 
 </body>
 </html>
